@@ -1137,18 +1137,13 @@ table, th, td {
       float: left;
       z-index: 99;
   }
-  .testimonial .container-fluid{
-      padding-bottom: 90px;
-  }
   .testimonial {
       max-height: auto;
       position: relative;
       background: url('https://i.ibb.co/PTJDkgb/testimonials.jpg') no-repeat center center fixed;
       padding-top: 20px;
-      padding-bottom: 20px;
       background-position: center;
       background-size: cover;
-      margin-bottom: 100px;
       box-sizing: border-box;
   }
   @media (max-width: 958px){
@@ -1325,8 +1320,23 @@ table, th, td {
   .testimonial4_slide p {
       color: #ffffff;
       font-size: 17px;
-     
+     -webkit-line-clamp: 4;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
       margin: 40px 0 20px 0;
+      padding: 4px 16px;
+  }
+  @media(max-width:500px){
+    .testimonial4_slide p {
+        color: #ffffff;
+        font-size: 15px;
+       -webkit-line-clamp: 4;
+       display: -webkit-box;
+       -webkit-box-orient: vertical;
+       overflow: hidden;
+        margin: 40px 0 20px 0;
+    }
   }
   .testimonial4_slide h4 {
     color: #ffffff;
