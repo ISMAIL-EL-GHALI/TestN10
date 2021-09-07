@@ -53,7 +53,12 @@ header .content {
 }
 @media(max-width:500px){
     .navbar-light .imgL{
-        width: 250px;
+        width: 210px;
+    }
+}
+@media(max-width:280px){
+    .navbar-light .imgL{
+        width: 181px;
     }
 }
 
