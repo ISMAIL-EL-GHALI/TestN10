@@ -1,13 +1,17 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
   $user = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
   $email =  filter_var( $_POST['email'] , FILTER_SANITIZE_EMAIL) ;
   $cell = filter_var($_POST['tele'] , FILTER_SANITIZE_NUMBER_INT);
   $msg = filter_var($_POST['mesg'] , FILTER_SANITIZE_STRING);
+
+
   $headers = 'From : '.$email. '\r\n';
   $from ='boussole.pro.fea *AT* gmail.com';
   $subject = 'Contact form';
   mail($from ,$subject ,$msg,$headers);
+
 }
 ?>
 <!DOCTYPE html>
@@ -94,7 +98,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <h1>Nos valeurs</h1>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-12 text-center wow animate__pulse" data-wow-duration="0.6s"
+        <div class="col-lg-4 col-md-12 text-center wow animate__fadeInLeft" data-wow-duration="0.6s"
           data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-user-tie"></i>
@@ -107,7 +111,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-12 text-center wow animate__pulse" data-wow-duration="0.6s"
+        <div class="col-lg-4 col-md-12 text-center wow animate__fadeInUp" data-wow-duration="0.6s"
           data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-thumbs-up"></i>
@@ -120,7 +124,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-12 text-center wow animate__pulse" data-wow-duration="0.6s"
+        <div class="col-lg-4 col-md-12 text-center wow animate__fadeInRight" data-wow-duration="0.6s"
           data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-heart"></i>
@@ -157,7 +161,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <h1>Pourquoi nous choisir</h1>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-6 text-center wow animate__pulse" data-wow-duration="0.6s"
+        <div class="col-lg-3 col-md-6 text-center wow animate__fadeInLeft" data-wow-duration="0.6s"
           data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-plus-square"></i>
@@ -166,7 +170,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 text-center wow animate__pulse" data-wow-duration="0.6s" data-wow-offset="190">
+        <div class="col-lg-3 col-md-6 text-center wow animate__fadeInUp" data-wow-duration="0.6s" data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-chart-line"></i>
           </div>
@@ -177,7 +181,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 text-center wow animate__pulse" data-wow-duration="0.6s"
+        <div class="col-lg-3 col-md-6 text-center wow animate__fadeInRight" data-wow-duration="0.6s"
           data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-globe-asia"></i>
@@ -188,7 +192,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 text-center wow animate__pulse" data-wow-duration="0.6s"
+        <div class="col-lg-3 col-md-6 text-center wow animate__fadeInDown" data-wow-duration="0.6s"
           data-wow-offset="190">
           <div class="icon text-center">
             <i class="fas fa-server"></i>
@@ -231,11 +235,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           <div class="col-md-6">
             <div class="media">
               <div class="row">
-                <div class="col-12 col-sm-2 col-lg-2 wow animate__pulse" data-wow-duration="0.6s"
-                data-wow-offset="190">
+                <div class="col-12 col-sm-2 col-lg-2 wow animate__fadeInLeft" data-wow-duration="0.2s"
+                  data-wow-offset="190">
                   <i class="fa fa-lightbulb fa-fw mr-sm-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-12 col-sm-10 col-lg-10 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-10 col-lg-10 wow animate__fadeInLeft" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <div class="media-body">
                     <h4>Sprint pro</h4>
@@ -253,11 +257,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           <div class="col-md-6">
             <div class="media">
               <div class="row">
-                <div class="col-12 col-sm-2 col-lg-2 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-2 col-lg-2 wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <i class="fa fa-boxes fa-fw mr-sm-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-12 col-sm-10  col-lg-10 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-10  col-lg-10 wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <div class="media-body ">
                     <h4>Shoura Pro</h4>
@@ -278,11 +282,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           <div class="col-md-6">
             <div class="media">
               <div class="row">
-                <div class="col-12 col-sm-2  col-lg-2 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-2  col-lg-2 wow animate__fadeInLeft" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <i class="fa fa-magic fa-fw mr-sm-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-12 col-sm-10  col-lg-10  wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-10  col-lg-10  wow animate__fadeInLeft" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <div class="media-body">
                     <h4>Meet Pro</h4>
@@ -301,11 +305,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           <div class="col-md-6">
             <div class="media">
               <div class="row">
-                <div class="col-12 col-sm-2  col-lg-2 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-2  col-lg-2 wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <i class="fa fa-clipboard-check fa-fw mr-sm-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-12 col-sm-10  col-lg-10   wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-10  col-lg-10   wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <div class="media-body">
                     <h4>Boost Pro</h4>
@@ -323,11 +327,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           <div class="col-md-6">
             <div class="media">
               <div class="row">
-                <div class="col-12 col-sm-2  col-lg-2 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-2  col-lg-2 wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <i class="fa fa-search fa-fw mr-sm-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-12 col-sm-10  col-lg-10   wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-10  col-lg-10   wow animate__fadeInLeft" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <div class="media-body media1">
                     <h4 style="color: rgb(119, 119, 233); font-size: 25px;">Relais BP</h4>
@@ -346,11 +350,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
           <div class="col-md-6">
             <div class="media">
               <div class="row">
-                <div class="col-12 col-sm-2  col-lg-2 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-2  col-lg-2 wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <i class="fa fa-star fa-fw mr-sm-3" aria-hidden="true"></i>
                 </div>
-                <div class="col-12 col-sm-10  col-lg-10 wow animate__pulse" data-wow-duration="0.6s"
+                <div class="col-12 col-sm-10  col-lg-10 wow animate__fadeInRight" data-wow-duration="0.2s"
                   data-wow-offset="190">
                   <div class="media-body media1">
                     <h4 style="color: rgb(119, 119, 233); font-size: 25px;">Expert Bp</h4>
