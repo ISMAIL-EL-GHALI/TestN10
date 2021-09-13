@@ -320,10 +320,12 @@ header .content a:hover {
     background-size: cover;
     background-position: center;
     color: #fff !important;
+    overflow: hidden;
 }
 
 .bg-img .container {
     padding-bottom: 75px;
+    overflow: hidden;
 }
 
 .bg-img .services {
@@ -409,6 +411,7 @@ header .content a:hover {
     background-size: cover;
     background-position: center;
     color: #fff !important;
+    overflow: hidden;
 }
 
 .pourqouichoisir .container {
@@ -912,7 +915,7 @@ header .content a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
-
+   overflow: hidden;
 }
 
 .service h2 {
